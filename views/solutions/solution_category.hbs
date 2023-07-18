@@ -1,0 +1,113 @@
+{{#each s_details}}
+
+<div class="sub-page">
+	<!-- Head Area -->
+	<div class="page-header" data-midnight="white">
+		<div class="img"></div>
+		<div class="head-content container-fluid">
+
+			<div class="container">
+				<h1 class="page-title">{{this.dataValues.stype}}</h1>
+				<!-- Breadcrumb -->
+				<div class="breadcrumb">
+					<a href="/">Home</a> /
+					<a class="current">Page</a>
+				</div>
+				<!--/ Breadcrumb -->
+			</div>
+		</div>
+	</div>
+	<!--/ Head Area -->
+	<!-- Content area -->
+	<div class="inner-page-sidebar section-bg-inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+
+
+
+					<div class="about-us">
+						<div class="section-padding">
+
+							<div class="col-lg-12 col-md-12">
+								<h3 class="text-center page-desc-title ">Overview</h3>
+
+
+								<p style="white-space: pre-line" align="justify">{{this.dataValues.description}}</p>
+							</div>
+
+
+						</div>
+
+
+					</div>
+
+					{{#if this.dataValues.use_case}}
+					<div class="about-us2">
+						<div class="section-padding">
+
+							<div class="row">
+								<div class="col-lg-12 col-md-12 ">
+									<h3 class="text-center page-desc-title ">Use Cases</h3>
+
+
+									<p style="white-space: pre-line" class="text-center">{{this.dataValues.use_case}}
+									</p>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					{{/if}}
+					<!-- About US -->
+
+					<div class="about-us1">
+						<div class="section-padding">
+							<h3 class="text-center page-desc-title">Our Solutions</h3>
+							<div class="row">
+								{{#each this.solution_details}}
+								<div class="col-lg-4 col-md-12">
+
+									<div class="card" >
+
+
+										<div class="card border-dash animated" data-animation="fadeInUpShorter"
+											data-animation-delay="0.5s">
+											<div class="card-body">
+												<h4 class="card-title text-info">{{this.dataValues.title}}</h4>
+												<p class="card-text">{{this.dataValues.overview1}}</p>
+
+
+											</div>
+											<img class="card-img-bottom" src="/uploads/{{this.dataValues.picture1}}"
+												rel="nofollow" alt="Card image cap">
+
+										</div>
+
+										<div class="card-footer">
+
+											<a href="/solutions/category/services/{{this.dataValues.title}}"
+												class="btn btn-sm btn-gradient-orange read-more" target="_blank">Read
+												More</a>
+										</div>
+
+									</div>
+									<br>
+
+
+
+								</div>
+								{{/each}}
+								<!--/ About US -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{/each}}

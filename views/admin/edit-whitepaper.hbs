@@ -1,0 +1,93 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header card-header-icon card-header-rose">
+                            <div class="card-icon">
+                                <i class="material-icons">edit</i>
+                            </div>
+                            <h4 class="card-title">Edit Whitepaper
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            {{>msg}}
+                        </div>
+                        <div class="card-body">
+
+                            <form class="form" method="POST" action="/admin/edit-whitepaper/{{whitepaper_list.id}}" enctype="multipart/form-data">
+
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">Title</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group has-default">
+                                            <input type="text" class="form-control" name="title" value="{{whitepaper_list.title}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">Abstract</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="abstract"
+                                                maxlength="number">{{whitepaper_list.abstract}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                  
+
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">website Link </label>
+                                    <div class="col-md-9">
+                                       <div class="form-group has-default">
+                                            <input type="text" class="form-control" name="website_link" value="{{whitepaper_list.website_link}}"  enctype="multipart/form-data">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="row">
+                                    <label class="col-md-3 col-form-label">Upload Picture</label>
+                                        <div class="col-md-9">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                            <div class="fileinput-new thumbnail">
+                                                <img src="/uploads/{{whitepaper_list.picture1}}" alt="...">
+                                            </div>
+                                            <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                            <div>
+                                                <span class="btn btn-rose btn-round btn-file">
+                                                    <span class="fileinput-new">Select image</span>
+                                                    <span class="fileinput-exists">Change</span>
+                                                    <input type="file" name="sampleFile" />
+                                                </span>
+                                                <a href="#pablo" class="btn btn-danger btn-round fileinput-exists"
+                                                    data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+
+                                <div class="card-footer justify-content-center">
+                                    <div class="row">
+
+                                        <div class="col-md-9">
+                                            <button type="submit" class="btn btn-fill btn-rose">Lets Go</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

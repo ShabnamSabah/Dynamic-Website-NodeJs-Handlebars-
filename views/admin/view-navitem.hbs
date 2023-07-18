@@ -1,0 +1,89 @@
+<div class="content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-rose card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">assignment</i>
+                        </div>
+                        <h4 class="card-title">List of NavItems</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>NavItem1</th>
+                                        <th>NavItem2</th>
+                                        <th>NavItem3</th>
+                                        <th>NavItem4</th>
+                                        <th>NavItem5</th>
+                                        <th>NavItem6</th>
+                                        <th class="text-center">SubNavItem1_6</th>
+                                        <th class="text-center">SubNavItem2_6</th>
+                                        <th class="text-center">SubNavItem3_6</th>
+                                        <th class="text-center">SubNavItem4_6</th>
+                                        <th class="text-center">SubNavItem5_6</th>
+                                        <th scope="col" class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                {{#each nitem}}
+                                <tbody>
+                                    <tr>
+
+                                        <td>
+                                            {{navitem1}}
+                                        </td>
+                                        <td>
+                                            {{navitem2}}
+                                        </td>
+                                        <td>
+                                            {{navitem3}}
+                                        </td>
+                                        <td>
+                                            {{navitem4}}
+                                        </td>
+                                        <td>
+                                            {{navitem5}}
+                                        </td>
+                                        <td>
+                                            {{navitem6}}
+                                        </td>
+                                        <td>
+                                            {{snavitem1_6}}
+                                        </td>
+                                        <td>
+                                            {{snavitem2_6}}
+                                        </td>
+                                        <td>
+                                            {{snavitem3_6}}
+                                        </td>
+                                        <td>
+                                            {{snavitem4_6}}
+                                        </td>
+                                        <td>
+                                            {{snavitem5_6}}
+                                        </td>
+
+                                        <td class="text-end" style='white-space: nowrap'>
+                                            <a href="/admin/edit-navitem/{{id}}" type="button"
+                                                class="btn btn-info btn-small"> <i
+                                                    class="material-icons">edit</i>Edit</a>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                {{/each}}
+
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

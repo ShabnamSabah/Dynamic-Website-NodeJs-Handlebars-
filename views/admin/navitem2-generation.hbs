@@ -1,0 +1,105 @@
+<!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+<div class="content">
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card ">
+                        <div class="card-header card-header-rose card-header-icon">
+                            <div class="card-icon">
+                                <i class="material-icons">assignment</i>
+                            </div>
+                            <h4 class="card-title">Add NavItem2</h4>
+                        </div>
+
+                        <div class="card-body">
+                            {{>msg}}
+                        </div>
+                        <div class="card-body ">
+                            <form class="form" method="POST" action="/admin/navitem2-details">
+
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">Title</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group has-default">
+                                            <input type="text" class="form-control" name="title" value="{{title}}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">Subtitle</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subtitle"
+                                                value="{{subtitle}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                     
+
+                                <!--div class="row">
+                                    <label class="col-md-3 col-form-label">Heading1</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="heading1"
+                                                value="{{heading1}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">Heading1_Details</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="h1_details"
+                                                maxlength="number">{{h1_details}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">Heading2</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="heading2"
+                                                value="{{heading2}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">Heading2_Details</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="h2_details"
+                                                maxlength="number">{{h2_details}}</textarea>
+                                        </div>
+                                    </div>
+                                </div-->
+
+                                <div class="card-footer justify-content-center">
+                                    <div class="row">
+
+                                        <div class="col-md-9">
+                                            <button type="submit" class="btn btn-fill btn-rose">Lets
+                                                Go</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,56 @@
+<div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">assignment</i>
+                  </div>
+                  <h4 class="card-title">List of Whitepapers</h4>
+                </div>
+                <div class="card-body">
+                  
+                  <div class="table-responsive">
+                    <table  class="table table-striped">
+                      <thead>
+                        <tr>
+                        
+                          <th>Title</th>
+                          <th> Overview</th>
+                           <th> Description</th>
+                          <th>Picture</th>
+                          <th class="text-right">Actions</th>
+                        </tr>
+                      </thead>
+                
+                      <tbody>
+                        {{#each service_list}}
+                        {{#dataValues}}
+                        <tr>
+                         
+                          <td>{{title}}</td>
+                          <td>{{overview1}}</td>
+                            <td>{{description1}}</td>
+                         <td><img src="/uploads/{{picture1}}" height="100x" width="150px"></td>
+                          <td class="text-right" style='white-space: nowrap'>
+                            <a href="/admin/edit-service/{{id}}" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">edit</i></a>
+                            <a href="/admin/delete-service/{{id}}" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                          </td>
+                        </tr>
+                        {{/dataValues}}
+                        {{/each}}
+                      </tbody>
+                    </table>
+                    </div>
+                  </div>
+               
+                <!-- end content-->
+              </div>
+              <!--  end card  -->
+            </div>
+            <!-- end col-md-12 -->
+          </div>
+          <!-- end row -->
+        </div>
+      </div>

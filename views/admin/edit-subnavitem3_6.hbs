@@ -1,0 +1,151 @@
+<!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+<div class="content">
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card ">
+                        <div class="card-header card-header-rose card-header-icon">
+                            <div class="card-icon">
+                                <i class="material-icons">edit</i>
+                            </div>
+                            <h4 class="card-title">Edit SubNavItem4 of NavItem6</h4>
+                        </div>
+
+                        <div class="card-body">
+                            {{>msg}}
+                        </div>
+                        <div class="card-body ">
+                            {{#each subnavitem4_6}}
+                            {{#dataValues}}
+                            <form class="form" method="POST" action="/admin/edit-subnavitem4_6">
+                            
+                             <div class="row">
+                                    <label class="col-md-3 col-form-label">Title</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group has-default">
+                                            <input type="text" class="form-control" name="title" value="{{title}}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">Subtitle</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subtitle"
+                                                value="{{subtitle}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">Details</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="details"
+                                                maxlength="number">{{details}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="row">
+                                    <label class="col-md-3 col-form-label">Phone</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" name="phone"
+                                                value="{{phone}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="row">
+                                    <label class="col-md-3 col-form-label">Email</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="email"
+                                                value="{{email}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    <div class="row">
+                                    <label class="col-md-3 col-form-label">Telegram Id</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="telegram_link" value="{{telegram_link}}">
+                                        </div>
+                                    </div>
+                                   </div>
+
+                                   <div class="row">
+                                    <label class="col-md-3 col-form-label">LinkeDin Id</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="linkedin_link" value="{{linkedin_link}}">
+                                        </div>
+                                    </div>
+                                   </div>
+                                 
+                                    <div class="row">
+                                    <label class="col-md-3 col-form-label">Facebook Id</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="fb_link" value="{{fb_link}}">
+                                        </div>
+                                    </div>
+                                   </div>
+                                    
+                                   
+                                    <div class="row">
+                                    <label class="col-md-3 col-form-label">GitHub Id</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="github_link" value="{{github_link}}">
+                                        </div>
+                                    </div>
+                                   </div>
+                            
+                               <div class="card-footer justify-content-center">
+                                    <div class="row">
+
+                                        <div class="col-md-9">
+                                            <button type="submit" class="btn btn-fill btn-rose">Lets
+                                                Go</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            
+                            </form>
+                            {{/dataValues}}
+                            {{/each}}
+                           </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                           
+
+
+                      
+
+
+
+
+

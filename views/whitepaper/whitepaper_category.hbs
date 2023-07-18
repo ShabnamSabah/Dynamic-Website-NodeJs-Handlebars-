@@ -1,0 +1,79 @@
+
+
+{{#each whitepaper_details}}
+
+<div class="sub-page">
+	<!-- Head Area -->
+	<div class="page-header" data-midnight="white">
+		<div class="img"></div>
+		<div class="head-content container-fluid">
+        
+			<div class="container">
+				<h1 class="page-title">{{this.dataValues.wtype}}</h1>
+				<!-- Breadcrumb -->
+				<div class="breadcrumb">
+					<a href="/">Home</a> / 
+					<a class="current">Page</a>
+				</div>
+				<!--/ Breadcrumb -->
+			</div>
+		</div>
+	</div>
+	<!--/ Head Area -->
+	<!-- Content area -->
+	<div class="inner-page-sidebar section-bg-inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					
+
+
+
+                  <div class="about-us">
+						<div class="section-padding">
+
+								<div class="col-lg-12 col-md-12 mx-auto">
+									<h3 class="text-center page-desc-title ">Overview</h3>
+
+
+									<p style="white-space: pre-line" align="justify">{{this.dataValues.description}}</p>
+								</div>
+
+
+						</div>
+
+						
+					</div>
+
+					<!-- About US -->
+                    
+					<div class="about-us">
+						<div class="section-padding">
+                            <h3 class="text-center page-desc-title">Our Solutions</h3>
+							{{#each this.category_details}}
+							<div class="row">
+								<div class="col-lg-6 col-md-12">
+									<h3 class="title-border page-desc-title">{{this.dataValues.title}}</h3>
+									<p align="justify">{{this.dataValues.abstract}}</p>
+                                    <a href="{{this.dataValues.website_link}}" class="btn btn-primary" target="_blank">More Details</a>
+								</div>
+								<div class="col-lg-6 col-md-12 text-center pt-4">
+									<img src="/uploads/{{this.dataValues.picture1}}" alt="Our Coin" class="img-fluid">
+								</div>
+							
+							</div>
+							<br>
+							{{/each}}
+                           
+						</div>
+					</div> 
+                    
+					<!--/ About US -->
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+{{/each}}

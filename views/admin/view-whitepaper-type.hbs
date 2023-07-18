@@ -1,0 +1,75 @@
+<!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+<div class="content">
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card ">
+                        <div class="card-header card-header-rose card-header-icon">
+                            <div class="card-icon">
+                                <i class="material-icons">assignment</i>
+                            </div>
+                            <h4 class="card-title">Whitepaper Types</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mt-5">
+                                {{#each wcategory}}
+                                {{#dataValues}}
+
+                                <div class="col-md-6">
+
+
+                                    <div class="card">
+                                        <div class="card-header card-header-danger">
+                                            
+
+                                                <h4 class="card-title">{{wtype}}
+                                                
+                                                  <a href="/admin/delete-whitepaper-type/{{id}}"
+                                                    class="btn btn-link btn-primary btn-just-icon remove float-right"><i
+                                                        class="material-icons">close</i></a>
+                                                 <a href="/admin/edit-whitepaper-type/{{id}}"
+                                                    class="btn btn-link btn-info btn-just-icon like float-right"><i
+                                                        class="material-icons">edit</i></a>
+                                              
+                                              
+                                                </h4>
+                                            
+
+                                            
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="/admin/add-whitepaper-details/{{id}}"
+                                                class="btn btn-link btn-info btn-just-icon like"><i
+                                                    class="material-icons">add_box</i></a>
+                                            <a href="/admin/view-whitepaper-details/{{id}}"
+                                                class="btn btn-link btn-danger btn-just-icon like"><i
+                                                    class="material-icons">view_list</i></a>
+
+                                        
+                                            </td>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                {{/dataValues}}
+                                {{/each}}
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>

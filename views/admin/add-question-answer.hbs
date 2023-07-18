@@ -1,0 +1,68 @@
+<!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+<div class="content">
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card ">
+                        <div class="card-header card-header-rose card-header-icon">
+                            <div class="card-icon">
+                                <i class="material-icons">assignment</i>
+                            </div>
+                            <h4 class="card-title">Add Question Answer</h4>
+                        </div>
+
+                        <div class="card-body">
+                            {{>msg}}
+                        </div>
+                        <div class="card-body ">
+                            <form class="form" method="POST" action="/admin/add-question-answer/{{question_category.id}}">
+
+                          
+
+                                <div class="row">
+                                    <label class="col-md-3 col-form-label">Question</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="question"
+                                                maxlength="number">{{question}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="row">
+                                    <label class="col-md-3 col-form-label">Answer</label>
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="answer"
+                                                maxlength="number">{{answer}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                                <div class="card-footer justify-content-center">
+                                    <div class="row">
+
+                                        <div class="col-md-9">
+                                            <button type="submit" class="btn btn-fill btn-rose">Lets
+                                                Go</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
