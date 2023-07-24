@@ -88,6 +88,11 @@ password: 12345
      2. FAQ
      3. Contact
 ```
+In Solution' section After adding heading and subtitle, admin will add solution type, for example admin will add blockchain as solution type and add basic details about blockchain and then admin can view the solution type and add differnt types of sloution based on blockchain.
+
+In Whitepaper' section After adding heading and subtitle, admin will add whitepaper type, for example admin will add blockchain as whitepaper type and add basic details about blockchain based recent papers and then admin can view the whitepaper type and add differnt types of research paper based on blockchain.
+
+Roadmap is basically a journay of a company where admin can add some epecific events.
 
 As this a dynamic website, that's why while making the website, I fixed the navitems previously in the above mentioned serial number and designed the content section in accordingly.
 The images are static as off now, based on the request we can make dynamic images.
